@@ -22,13 +22,13 @@ node {
     }
 */
 
-    
+/*    
     echo "BUILD_NUMBER: ${BUILD_NUMBER}"
     echo "GIT_COMMIT: ${GIT_COMMIT}"
     echo "BUILD_TAG: ${BUILD_TAG}"
     echo "BUILD_ID: ${BUILD_ID}"
     echo "EXECUTOR_NUMBER: ${EXECUTOR_NUMBER}"
-
+*/
 
 
 //    def searchResults = jiraJqlSearch jql: "project = ProjectManagement AND issuekey = 'HVC-10'"
@@ -94,6 +94,21 @@ node {
     println '===================== ADD COMMENTS IN HVC-7  =========================================='
     comment = [ body: 'test comment' ]
 //    jiraAddComment site: 'JiraLocal', idOrKey: 'HVC-7', input: comment
+
+
+
+
+
+
+
+
+
+
+    echo "BUILD_NUMBER: ${BUILD_NUMBER}"
+    echo "GIT_COMMIT: ${GIT_COMMIT}"
+    echo "BUILD_TAG: ${BUILD_TAG}"
+    echo "BUILD_ID: ${BUILD_ID}"
+    echo "EXECUTOR_NUMBER: ${EXECUTOR_NUMBER}"
 
 //    println '===================== MODIFY COMMENT IN HVC-7  ============================================'
 //    def comment = [body: 'test comment', visibility: [type: 'role', value: 'Developer' ]]
