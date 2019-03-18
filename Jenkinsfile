@@ -24,6 +24,13 @@ node {
 
     
     echo "BUILD_NUMBER: ${BUILD_NUMBER}"
+    echo "GIT_COMMIT: ${GIT_COMMIT}"
+    echo "BUILD_TAG: ${BUILD_TAG}"
+    echo "BUILD_ID: ${BUILD_ID}"
+    echo "EXECUTOR_NUMBER: ${EXECUTOR_NUMBER}"
+
+
+
 //    def searchResults = jiraJqlSearch jql: "project = ProjectManagement AND issuekey = 'HVC-10'"
 //    def issues = searchResults.data.issues
 //    sh 'env'
