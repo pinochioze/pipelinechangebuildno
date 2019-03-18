@@ -21,7 +21,11 @@ node {
       commentTrigger:'')
     }
 */
-
+    checkout([$class: 'GitSCM', 
+            branches: [[name: "${sha1}"]], 
+          extensions: [[$class: 'LocalBranch']], 
+   userRemoteConfigs: [[refspec: "+refs/pull/*/head:refs/remotes/origin/*", 
+                 url: "https://github.com/pinochioze/pipelinechangebuildno.git"]]])
 
 
 //    def searchResults = jiraJqlSearch jql: "project = ProjectManagement AND issuekey = 'HVC-10'"
