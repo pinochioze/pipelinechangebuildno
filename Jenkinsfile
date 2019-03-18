@@ -22,7 +22,8 @@ node {
     }
 */
 
-    println $BUILD_NUMBER
+    
+    echo "BUILD_NUMBER: ${BUILD_NUMBER}"
 //    def searchResults = jiraJqlSearch jql: "project = ProjectManagement AND issuekey = 'HVC-10'"
 //    def issues = searchResults.data.issues
 //    sh 'env'
