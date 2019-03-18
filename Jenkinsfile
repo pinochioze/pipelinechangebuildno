@@ -98,7 +98,7 @@ node {
 
 
     echo "BUILD_NUMBER: ${BUILD_NUMBER}"
-    echo "GIT_COMMIT: ${GIT_COMMIT}"
+//    echo "GIT_COMMIT: ${GIT_COMMIT}"
     echo "BUILD_TAG: ${BUILD_TAG}"
     echo "BUILD_ID: ${BUILD_ID}"
     echo "EXECUTOR_NUMBER: ${EXECUTOR_NUMBER}"
