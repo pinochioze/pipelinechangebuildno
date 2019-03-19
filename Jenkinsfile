@@ -24,7 +24,7 @@ node {
 
 
     checkout([$class: 'GitSCM', 
-/             branches: [[name: "*/prforpipeline"]], 
+             branches: [[name: "*/prforpipeline"]], 
 //            branches: [[name: "${sha1}"]],
           extensions: [[$class: 'LocalBranch']], 
    userRemoteConfigs: [[refspec: "+refs/pull/*:refs/remotes/origin/pr/*", 
