@@ -31,7 +31,7 @@ node {
                  url: "https://github.com/pinochioze/pipelinechangebuildno.git"
 
                       
-                      ]]])
+                     ]]])
 
 
 //    def searchResults = jiraJqlSearch jql: "project = ProjectManagement AND issuekey = 'HVC-10'"
