@@ -21,16 +21,18 @@ node {
       commentTrigger:'')
     }
 */
-    checkout([$class: 'GitSCM', 
-//            branches: [[name: "*/prforpipeline"]], 
-            branches: [[name: "${sha1}"]],
+
+
+//    checkout([$class: 'GitSCM', 
+//             branches: [[name: "*/prforpipeline"]], 
+/*            branches: [[name: "${sha1}"]],
           extensions: [[$class: 'LocalBranch']], 
    userRemoteConfigs: [[refspec: "+refs/pull/*:refs/remotes/origin/pr/*", 
                  url: "https://github.com/pinochioze/pipelinechangebuildno.git"
 
                       
                       ]]])
-
+*/
 
 //    def searchResults = jiraJqlSearch jql: "project = ProjectManagement AND issuekey = 'HVC-10'"
 //    def issues = searchResults.data.issues
@@ -108,7 +110,7 @@ node {
     echo "BUILD_NUMBER: ${BUILD_NUMBER}"
 //    echo "GIT_COMMIT: ${GIT_COMMIT}"
 
-    echo "sha1: ${sha1}"
+//    echo "sha1: ${sha1}"
     echo "BUILD_TAG: ${BUILD_TAG}"
     echo "BUILD_ID: ${BUILD_ID}"
     echo "EXECUTOR_NUMBER: ${EXECUTOR_NUMBER}"
