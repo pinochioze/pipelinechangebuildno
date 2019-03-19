@@ -112,6 +112,9 @@ node {
     echo "BUILD_TAG: ${BUILD_TAG}"
     echo "BUILD_ID: ${BUILD_ID}"
     echo "EXECUTOR_NUMBER: ${EXECUTOR_NUMBER}"
+    BUILD_NUMBER = sha1
+    echo "BUILD_NUMBER: ${BUILD_NUMBER}"
+
 
 //    println '===================== MODIFY COMMENT IN HVC-7  ============================================'
 //    def comment = [body: 'test comment', visibility: [type: 'role', value: 'Developer' ]]
