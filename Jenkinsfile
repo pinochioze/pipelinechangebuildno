@@ -23,16 +23,16 @@ node {
 */
 
 
-//    checkout([$class: 'GitSCM', 
-//             branches: [[name: "*/prforpipeline"]], 
-/*            branches: [[name: "${sha1}"]],
+    checkout([$class: 'GitSCM', 
+/             branches: [[name: "*/prforpipeline"]], 
+//            branches: [[name: "${sha1}"]],
           extensions: [[$class: 'LocalBranch']], 
    userRemoteConfigs: [[refspec: "+refs/pull/*:refs/remotes/origin/pr/*", 
                  url: "https://github.com/pinochioze/pipelinechangebuildno.git"
 
                       
                       ]]])
-*/
+
 
 //    def searchResults = jiraJqlSearch jql: "project = ProjectManagement AND issuekey = 'HVC-10'"
 //    def issues = searchResults.data.issues
